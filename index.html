@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="es-CO" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Festival Náutico Cartagena 2026 | Rumbas de la Ciudad</title>
+  <meta name="description" content="Vive el Festival Náutico Cartagena 2026 los días 13 y 14 de noviembre y el Remate Ultra Privado del 15 de noviembre. Consulta precios y reserva tu experiencia por WhatsApp.">
+  <meta name="theme-color" content="#08090B">
+  <meta name="color-scheme" content="dark">
+
+  <!-- Al confirmar el dominio, poner aquí la URL absoluta (og:url, og:image y canonical). -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:site_name" content="Rumbas de la Ciudad">
+  <meta property="og:title" content="Festival Náutico Cartagena 2026 | Rumbas de la Ciudad">
+  <meta property="og:description" content="13 y 14 de noviembre desde el mar · Remate Ultra Privado el 15 de noviembre en Barú. Precios publicados y reservas por WhatsApp.">
+  <meta property="og:image" content="assets/img/og-festival-nautico.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Festival Náutico Cartagena 2026 con Rumbas de la Ciudad">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="preload" href="assets/fonts/archivo-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" type="image/avif" fetchpriority="high"
+        imagesrcset="assets/img/festival-artistas-480.avif 480w, assets/img/festival-artistas-720.avif 720w, assets/img/festival-artistas-900.avif 900w"
+        imagesizes="(min-width: 1024px) min(60vw, 62rem), 100vw">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script>
+    /* Estado inicial: clase js, intro solo en la primera visita de la sesión
+       y red de seguridad que muestra todo si main.js no llega a cargar. */
+    (function () {
+      var d = document.documentElement;
+      d.className = d.className.replace('no-js', 'js');
+      var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var con = navigator.connection || {};
+      var vista = null;
+      try { vista = sessionStorage.getItem('rdlc-intro'); } catch (e) {}
+      if (!reduce && !vista && !con.saveData && !/(^|-)2g$|3g/.test(con.effectiveType || '')) {
+        d.classList.add('intro');
+        try { sessionStorage.setItem('rdlc-intro', '1'); } catch (e) {}
+      } else {
+        d.classList.add('is-ready');
+      }
+      window.__rdlcMostrarTodo = setTimeout(function () { d.classList.add('show-all'); }, 6000);
+    })();
+  </script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <div class="loader" aria-hidden="true">
+    <div class="loader__in">
+      <img id="loader-logo" class="loader__logo" src="assets/img/logo-rumbas-de-la-ciudad.webp" width="583" height="150" alt="" fetchpriority="high">
+      <svg class="loader__wave" viewBox="0 0 240 16" preserveAspectRatio="none" aria-hidden="true">
+        <path class="loader__wave-base" d="M0 8C20 1 40 1 60 8S100 15 120 8 160 1 180 8 220 15 240 8"/>
+        <path class="loader__wave-run" pathLength="1" d="M0 8C20 1 40 1 60 8S100 15 120 8 160 1 180 8 220 15 240 8"/>
+      </svg>
+      <p class="loader__coord"><span>10°24′N</span><span>75°30′W</span><span>Cartagena</span></p>
+    </div>
+  </div>
+  <script>
+    /* La pantalla de carga se cierra desde aquí, sin esperar al JS principal ni a la foto:
+       mínimo ~500 ms desde el primer pintado, con el documento listo y el logo cargado; tope 1,2 s. */
+    (function () {
+      var d = document.documentElement;
+      if (!d.classList.contains('intro')) return;
+      var logo = document.getElementById('loader-logo');
+      var logoListo = logo.complete, minimo = false, cerrado = false;
+      function cerrar() {
+        if (cerrado) return;
+        cerrado = true;
+        d.classList.add('is-ready');
+        setTimeout(function () { d.classList.add('intro-done'); }, 1100);
+      }
+      function intentar() {
+        if (minimo && logoListo && document.readyState !== 'loading') cerrar();
+      }
+      logo.addEventListener('load', function () { logoListo = true; intentar(); });
+      logo.addEventListener('error', function () { logoListo = true; intentar(); });
+      document.addEventListener('DOMContentLoaded', intentar);
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          setTimeout(function () { minimo = true; intentar(); }, 500);
+          setTimeout(cerrar, 1200);
+        });
+      });
+    })();
+  </script>
+
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="bar" id="barra">
+    <div class="bar__in">
+      <a class="bar__logo" href="#inicio" aria-label="Rumbas de la Ciudad, volver al inicio">
+        <img src="assets/img/logo-rumbas-de-la-ciudad.webp" width="583" height="150" alt="Rumbas de la Ciudad">
+      </a>
+      <p class="bar__cov">Medellín <span aria-hidden="true">·</span> Cartagena</p>
+      <nav class="bar__nav" aria-label="Experiencias">
+        <a href="#line-up" data-wp="festival"><span class="bar__wp">13·14</span> Festival Náutico</a>
+        <a href="#remate" data-wp="remate"><span class="bar__wp">15</span> Remate</a>
+      </nav>
+      <a class="btn btn--bar" href="#reservar">Reservar</a>
+    </div>
+    <div class="bar__progress" aria-hidden="true"><span></span></div>
+  </header>
+
+  <main id="contenido">
+    <!-- PORTADA · FESTIVAL NÁUTICO -->
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="hero__media" data-parallax-frame>
+        <div class="hero__img" data-parallax="0.06">
+          <picture>
+            <source type="image/avif" srcset="assets/img/festival-artistas-480.avif 480w, assets/img/festival-artistas-720.avif 720w, assets/img/festival-artistas-900.avif 900w" sizes="(min-width: 1024px) min(60vw, 62rem), 100vw">
+            <source type="image/webp" srcset="assets/img/festival-artistas-480.webp 480w, assets/img/festival-artistas-720.webp 720w, assets/img/festival-artistas-900.webp 900w" sizes="(min-width: 1024px) min(60vw, 62rem), 100vw">
+            <img src="assets/img/festival-artistas-900.jpg" width="900" height="672" fetchpriority="high" decoding="async"
+                 alt="Artistas del cartel del Festival Náutico Cartagena 2026, entre ellos Juan Luis Guerra, Silvestre Dangond, Ryan Castro, Nicky Jam y Grupo Niche, frente a Cartagena de noche">
+          </picture>
+        </div>
+        <div class="hero__chart" aria-hidden="true">
+          <span class="mark mark--tl"></span><span class="mark mark--tr"></span><span class="mark mark--bl"></span><span class="mark mark--br"></span>
+          <p class="hero__coord">N 10°24′ <br>W 75°30′</p>
+          <p class="hero__fig">Cartagena de Indias · Festival Náutico 2026</p>
+        </div>
+      </div>
+
+      <div class="hero__body">
+        <p class="kicker h-in" style="--i:0"><span>Rumbas de la Ciudad</span><span class="kicker__sep" aria-hidden="true"></span><span>Medellín · Cartagena</span></p>
+        <h1 class="hero__title" id="hero-titulo">
+          <span class="line"><span class="line__in">Festival</span></span>
+          <span class="line"><span class="line__in">Náutico</span></span>
+          <span class="hero__city h-in" style="--i:3">Cartagena 2026</span>
+        </h1>
+        <p class="hero__meta h-in" style="--i:4">Experiencia náutica privada <span aria-hidden="true">/</span> 13 y 14 de noviembre de 2026</p>
+
+        <div class="pass h-in" style="--i:5">
+          <div class="pass__days" role="group" aria-labelledby="pass-dias">
+            <p class="pass__lbl" id="pass-dias">Elige tu día</p>
+            <button type="button" class="day" data-day="13" aria-pressed="false">
+              <span class="day__w">Vie</span><span class="day__n">13</span><span class="day__m">Nov</span>
+              <span class="sr">viernes 13 de noviembre</span>
+            </button>
+            <button type="button" class="day" data-day="14" aria-pressed="false">
+              <span class="day__w">Sáb</span><span class="day__n">14</span><span class="day__m">Nov</span>
+              <span class="sr">sábado 14 de noviembre</span>
+            </button>
+          </div>
+          <div class="pass__price">
+            <p class="pass__lbl">Cupo</p>
+            <p class="pass__amount"><span class="pass__cur">$</span>1.000.000</p>
+            <p class="pass__unit">COP · por persona / por día</p>
+          </div>
+        </div>
+
+        <div class="hero__cta h-in" style="--i:6">
+          <a class="btn btn--xl" data-book="festival" data-follow-day target="_blank" rel="noopener"
+             href="https://wa.me/573104001919?text=Hola%2C%20quiero%20informaci%C3%B3n%20y%20disponibilidad%20para%20reservar%20cupos%20del%20Festival%20N%C3%A1utico%20Cartagena%202026%20(13%20y%2014%20de%20noviembre).%20Valor%20publicado%3A%20%241.000.000%20COP%20por%20persona%20y%20por%20d%C3%ADa.%20%C2%BFC%C3%B3mo%20puedo%20confirmar%20mi%20reserva%3F">
+            <span class="btn__txt">Reservar mi cupo</span>
+            <svg class="btn__ico" aria-hidden="true"><use href="#i-flecha"/></svg>
+          </a>
+          <p class="wa-note">
+            <svg class="wa-note__ico" aria-hidden="true"><use href="#i-wa"/></svg>
+            <span>Reservas por WhatsApp · <span data-day-note>310 400 1919</span></span>
+          </p>
+        </div>
+      </div>
+
+      <div class="hero__ruler" aria-hidden="true">
+        <span class="hero__ruler-ticks"></span>
+        <span class="wp wp--a">13 NOV</span><span class="wp wp--b">14 NOV</span><span class="wp wp--c">15 NOV · Barú</span>
+      </div>
+    </section>
+
+    <!-- FECHAS Y ARTISTAS -->
+    <section class="lineup" id="line-up" aria-labelledby="lineup-titulo">
+      <div class="wrap lineup__grid">
+        <header class="lineup__head">
+          <p class="label rv"><span class="label__n">01</span> Festival Náutico</p>
+          <h2 class="h2 rv" id="lineup-titulo" style="--d:1">Elige tu fecha</h2>
+          <div class="tabs rv" role="tablist" aria-label="Fechas del Festival Náutico" style="--d:2">
+            <button class="tab" role="tab" id="tab-13" aria-controls="panel-13" aria-selected="true" data-day="13">
+              <span class="tab__w">Viernes</span><span class="tab__n">13</span><span class="tab__m">Noviembre</span>
+            </button>
+            <button class="tab" role="tab" id="tab-14" aria-controls="panel-14" aria-selected="false" tabindex="-1" data-day="14">
+              <span class="tab__w">Sábado</span><span class="tab__n">14</span><span class="tab__m">Noviembre</span>
+            </button>
+          </div>
+        </header>
+
+        <div class="panels rv" style="--d:3">
+          <div class="panel" role="tabpanel" id="panel-13" aria-labelledby="tab-13" tabindex="0">
+            <h3 class="panel__day">Viernes 13 de noviembre</h3>
+            <ul class="artists">
+              <li class="artists__lead" style="--n:0">Juan Luis Guerra</li>
+              <li style="--n:1">Beéle</li>
+              <li style="--n:2">DJ Dever</li>
+              <li style="--n:3">Criss &amp; Ronny</li>
+              <li style="--n:4">Rafa Pérez</li>
+              <li style="--n:5">Grupo Niche</li>
+              <li style="--n:6">Zaider</li>
+              <li style="--n:7">Héctor Nazza</li>
+            </ul>
+            <div class="panel__foot">
+              <p class="panel__price"><strong>$1.000.000 COP</strong> por persona · viernes 13</p>
+              <a class="btn" data-book="festival-13" target="_blank" rel="noopener"
+                 href="https://wa.me/573104001919?text=Hola%2C%20quiero%20informaci%C3%B3n%20y%20disponibilidad%20para%20reservar%20cupos%20del%20Festival%20N%C3%A1utico%20Cartagena%202026%20para%20el%20viernes%2013%20de%20noviembre.%20Valor%20publicado%3A%20%241.000.000%20COP%20por%20persona%20y%20por%20d%C3%ADa.%20%C2%BFC%C3%B3mo%20puedo%20confirmar%20mi%20reserva%3F">
+                <span class="btn__txt">Reservar viernes 13</span>
+                <svg class="btn__ico" aria-hidden="true"><use href="#i-flecha"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="panel" role="tabpanel" id="panel-14" aria-labelledby="tab-14" tabindex="0">
+            <h3 class="panel__day">Sábado 14 de noviembre</h3>
+            <ul class="artists">
+              <li class="artists__lead" style="--n:0">Silvestre Dangond</li>
+              <li style="--n:1">Giblack</li>
+              <li style="--n:2">Mr Black</li>
+              <li style="--n:3">Luister La Voz</li>
+              <li style="--n:4">Elder Dayán</li>
+              <li style="--n:5">Jessi Uribe</li>
+              <li style="--n:6">Ryan Castro</li>
+              <li style="--n:7">Nicky Jam</li>
+              <li style="--n:8">Hamilton</li>
+              <li style="--n:9">Tremendo</li>
+            </ul>
+            <div class="panel__foot">
+              <p class="panel__price"><strong>$1.000.000 COP</strong> por persona · sábado 14</p>
+              <a class="btn" data-book="festival-14" target="_blank" rel="noopener"
+                 href="https://wa.me/573104001919?text=Hola%2C%20quiero%20informaci%C3%B3n%20y%20disponibilidad%20para%20reservar%20cupos%20del%20Festival%20N%C3%A1utico%20Cartagena%202026%20para%20el%20s%C3%A1bado%2014%20de%20noviembre.%20Valor%20publicado%3A%20%241.000.000%20COP%20por%20persona%20y%20por%20d%C3%ADa.%20%C2%BFC%C3%B3mo%20puedo%20confirmar%20mi%20reserva%3F">
+                <span class="btn__txt">Reservar sábado 14</span>
+                <svg class="btn__ico" aria-hidden="true"><use href="#i-flecha"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUÉ INCLUYE -->
+    <section class="aboard" id="a-bordo" aria-labelledby="abordo-titulo">
+      <div class="wrap aboard__grid">
+        <header class="aboard__head">
+          <p class="label rv"><span class="label__n">02</span> Incluye</p>
+          <h2 class="aboard__title rv" id="abordo-titulo" style="--d:1">Tú disfrutas el festival desde el mar.</h2>
+          <p class="aboard__lead rv" style="--d:2">Nosotros nos encargamos de la experiencia a bordo.</p>
+        </header>
+
+        <div class="aboard__media">
+          <figure class="frame frame--main rv" data-parallax-frame>
+            <div class="frame__img" data-parallax="0.05">
+              <picture>
+                <source type="image/avif" srcset="assets/img/festival-lancha-480.avif 480w, assets/img/festival-lancha-720.avif 720w" sizes="(min-width: 1024px) 46vw, 100vw">
+                <source type="image/webp" srcset="assets/img/festival-lancha-480.webp 480w, assets/img/festival-lancha-720.webp 720w" sizes="(min-width: 1024px) 46vw, 100vw">
+                <img src="assets/img/festival-lancha-720.jpg" width="720" height="379" loading="lazy" decoding="async"
+                     alt="Grupo a bordo de una lancha durante un paseo por la bahía de Cartagena">
+              </picture>
+            </div>
+            <figcaption class="frame__cap"><span>A bordo</span><span>Bahía de Cartagena</span></figcaption>
+          </figure>
+          <figure class="frame frame--second rv" style="--d:2">
+            <picture>
+              <source type="image/avif" srcset="assets/img/festival-ponton-580.avif">
+              <source type="image/webp" srcset="assets/img/festival-ponton-580.webp">
+              <img src="assets/img/festival-ponton-580.jpg" width="580" height="200" loading="lazy" decoding="async"
+                   alt="Pontón navegando con pasajeros en Cartagena">
+            </picture>
+          </figure>
+        </div>
+
+        <div class="aboard__body">
+          <ul class="manifest" aria-label="Qué incluye la experiencia náutica">
+            <li class="rv" style="--d:0"><svg aria-hidden="true"><use href="#i-timon"/></svg><span>Capitán y marinero profesional</span></li>
+            <li class="rv" style="--d:1"><svg aria-hidden="true"><use href="#i-combustible"/></svg><span>Combustible</span></li>
+            <li class="rv" style="--d:2"><svg aria-hidden="true"><use href="#i-bano"/></svg><span>Baño a bordo</span></li>
+            <li class="rv" style="--d:3"><svg aria-hidden="true"><use href="#i-sonido"/></svg><span>Sonido profesional</span></li>
+            <li class="rv" style="--d:4"><svg aria-hidden="true"><use href="#i-hielo"/></svg><span>Hielo</span></li>
+            <li class="rv" style="--d:0"><svg aria-hidden="true"><use href="#i-regalo"/></svg><span>Regalos carnavaleros</span></li>
+            <li class="rv" style="--d:1"><svg aria-hidden="true"><use href="#i-agua"/></svg><span>Botellas de agua</span></li>
+            <li class="rv" style="--d:2"><svg aria-hidden="true"><use href="#i-aguardiente"/></svg><span>Aguardiente</span></li>
+            <li class="rv" style="--d:3"><svg aria-hidden="true"><use href="#i-cerveza"/></svg><span>Cervezas nacionales</span></li>
+            <li class="rv" style="--d:4"><svg aria-hidden="true"><use href="#i-empanada"/></svg><span>Empanaditas</span></li>
+          </ul>
+          <div class="aboard__cta rv">
+            <p class="aboard__price"><strong>$1.000.000 COP</strong> por persona / por día</p>
+            <a class="link-cta" data-book="festival" data-follow-day target="_blank" rel="noopener"
+               href="https://wa.me/573104001919?text=Hola%2C%20quiero%20informaci%C3%B3n%20y%20disponibilidad%20para%20reservar%20cupos%20del%20Festival%20N%C3%A1utico%20Cartagena%202026%20(13%20y%2014%20de%20noviembre).%20Valor%20publicado%3A%20%241.000.000%20COP%20por%20persona%20y%20por%20d%C3%ADa.%20%C2%BFC%C3%B3mo%20puedo%20confirmar%20mi%20reserva%3F">
+              Reservar mi cupo <svg aria-hidden="true"><use href="#i-flecha"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RUTA 13 → 14 → 15 -->
+    <div class="route wrap rv" aria-hidden="true">
+      <svg class="route__line" viewBox="0 0 1000 40" preserveAspectRatio="none">
+        <path d="M0 20 H1000" pathLength="1"/>
+      </svg>
+      <span class="route__wp" style="--x:0">13</span>
+      <span class="route__wp" style="--x:.5">14</span>
+      <span class="route__wp route__wp--gold" style="--x:1">15</span>
+    </div>
+
+    <!-- REMATE ULTRA PRIVADO -->
+    <section class="remate" id="remate" aria-labelledby="remate-titulo">
+      <div class="wrap remate__grid">
+        <figure class="remate__art rv">
+          <div class="frame__img">
+            <picture>
+              <source type="image/avif" srcset="assets/img/remate-natalia-paris-480.avif 480w, assets/img/remate-natalia-paris-720.avif 720w" sizes="(min-width: 1024px) 42vw, 100vw">
+              <source type="image/webp" srcset="assets/img/remate-natalia-paris-480.webp 480w, assets/img/remate-natalia-paris-720.webp 720w" sizes="(min-width: 1024px) 42vw, 100vw">
+              <img src="assets/img/remate-natalia-paris-720.jpg" width="720" height="648" loading="lazy" decoding="async"
+                   alt="Pieza del Remate Ultra Privado con Natalia París, el Bar flotante Amarillo y Marco Lasso frente a Cartagena">
+            </picture>
+          </div>
+          <span class="mark mark--tl" aria-hidden="true"></span><span class="mark mark--br" aria-hidden="true"></span>
+        </figure>
+
+        <div class="remate__body">
+          <svg class="sunset rv" viewBox="0 0 200 100" aria-hidden="true">
+            <path class="sunset__sun" d="M40 100 A60 60 0 0 1 160 100" pathLength="1"/>
+            <path class="sunset__sea" d="M0 100 H200" pathLength="1"/>
+          </svg>
+          <p class="label label--gold rv"><span class="label__n">03</span> Domingo 15 de noviembre</p>
+          <h2 class="remate__title rv" id="remate-titulo" style="--d:1">Remate <span>Ultra Privado</span></h2>
+          <p class="remate__city rv" style="--d:2">Cartagena 2026</p>
+
+          <dl class="facts rv" style="--d:3">
+            <div><dt>Fecha</dt><dd>Domingo 15 de noviembre de 2026</dd></div>
+            <div><dt>Lugar</dt><dd>Isla Santa Cruz, playas de Barú</dd></div>
+            <div><dt>Inicio</dt><dd>11:00 a. m.</dd></div>
+          </dl>
+          <ul class="vibe rv" style="--d:4">
+            <li>Música electrónica</li><li>DJs</li><li>Sonido profesional</li><li>Playa y atardecer</li>
+          </ul>
+          <p class="cast rv" style="--d:5"><span class="cast__lbl">En el cartel</span> Natalia París <span aria-hidden="true">·</span> Marco Lasso <span aria-hidden="true">·</span> Bar Amarillo flotante</p>
+        </div>
+      </div>
+
+      <div class="wrap zones" id="zonas">
+        <div class="zones__aside">
+          <figure class="zones__photo rv" data-parallax-frame>
+            <div class="frame__img" data-parallax="0.04">
+              <picture>
+                <source type="image/avif" srcset="assets/img/remate-plataforma-flotante-480.avif 480w, assets/img/remate-plataforma-flotante-720.avif 720w" sizes="(min-width: 1024px) 38vw, 100vw">
+                <source type="image/webp" srcset="assets/img/remate-plataforma-flotante-480.webp 480w, assets/img/remate-plataforma-flotante-720.webp 720w" sizes="(min-width: 1024px) 38vw, 100vw">
+                <img src="assets/img/remate-plataforma-flotante-720.jpg" width="720" height="277" loading="lazy" decoding="async"
+                     alt="Plataforma flotante con pérgola y asistentes frente a los edificios de Cartagena">
+              </picture>
+            </div>
+          </figure>
+          <div class="zones__more rv" style="--d:1">
+            <p class="zones__note">Valores publicados en pesos colombianos. La disponibilidad de cada zona se confirma al reservar.</p>
+            <a class="link-cta" data-book="remate" target="_blank" rel="noopener"
+               href="https://wa.me/573104001919?text=Hola%2C%20quiero%20reservar%20para%20el%20Remate%20Ultra%20Privado%20del%20domingo%2015%20de%20noviembre%20de%202026%20en%20Isla%20Santa%20Cruz%2C%20playas%20de%20Bar%C3%BA.%20Quisiera%20conocer%20las%20zonas%20disponibles.%20%C2%BFMe%20confirman%20disponibilidad%20y%20el%20proceso%20de%20reserva%3F">
+              Consultar zonas disponibles <svg aria-hidden="true"><use href="#i-flecha"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="zones__list">
+          <div class="zones__head">
+            <h3 class="h3 rv" id="zonas-titulo">Zonas y precios</h3>
+            <p class="zones__hint rv">Toca una zona para reservarla por WhatsApp.</p>
+          </div>
+          <ol class="zone-list" aria-labelledby="zonas-titulo">
+            <li class="rv">
+              <a class="zone zone--feature" data-book="remate" data-zone="bar-amarillo" target="_blank" rel="noopener"
+                 href="https://wa.me/573104001919?text=Hola%2C%20quiero%20reservar%20para%20el%20Remate%20Ultra%20Privado%20del%20domingo%2015%20de%20noviembre%20de%202026%20en%20Isla%20Santa%20Cruz%2C%20playas%20de%20Bar%C3%BA.%20Me%20interesa%20la%20zona%20Bar%20Amarillo%20flotante%20(valor%20publicado%3A%20%24450.000%20COP%20por%20persona).%20%C2%BFMe%20confirman%20disponibilidad%20y%20el%20proceso%20de%20reserva%3F">
+                <span class="zone__n" aria-hidden="true">01</span>
+                <span class="zone__name">Bar Amarillo flotante</span>
+                <span class="zone__price"><span class="zone__cur">$</span>450.000 <span class="zone__unit">COP · por persona</span></span>
+                <span class="zone__go">Reservar <svg aria-hidden="true"><use href="#i-flecha"/></svg></span>
+              </a>
+            </li>
+            <li class="rv" style="--d:1">
+              <a class="zone" data-book="remate" data-zone="playa" target="_blank" rel="noopener"
+                 href="https://wa.me/573104001919?text=Hola%2C%20quiero%20reservar%20para%20el%20Remate%20Ultra%20Privado%20del%20domingo%2015%20de%20noviembre%20de%202026%20en%20Isla%20Santa%20Cruz%2C%20playas%20de%20Bar%C3%BA.%20Me%20interesa%20la%20zona%20playa%20(valor%20publicado%3A%20%24250.000%20COP).%20%C2%BFMe%20confirman%20disponibilidad%20y%20el%20proceso%20de%20reserva%3F">
+                <span class="zone__n" aria-hidden="true">02</span>
+                <span class="zone__name">Zona playa</span>
+                <span class="zone__price"><span class="zone__cur">$</span>250.000 <span class="zone__unit">COP</span></span>
+                <span class="zone__go">Reservar <svg aria-hidden="true"><use href="#i-flecha"/></svg></span>
+              </a>
+            </li>
+            <li class="rv" style="--d:2">
+              <a class="zone" data-book="remate" data-zone="mesas-cocteleras" target="_blank" rel="noopener"
+                 href="https://wa.me/573104001919?text=Hola%2C%20quiero%20reservar%20para%20el%20Remate%20Ultra%20Privado%20del%20domingo%2015%20de%20noviembre%20de%202026%20en%20Isla%20Santa%20Cruz%2C%20playas%20de%20Bar%C3%BA.%20Me%20interesa%20la%20zona%20mesas%20cocteleras%20(valor%20publicado%3A%20%24180.000%20COP).%20%C2%BFMe%20confirman%20disponibilidad%20y%20el%20proceso%20de%20reserva%3F">
+                <span class="zone__n" aria-hidden="true">03</span>
+                <span class="zone__name">Zona mesas cocteleras</span>
+                <span class="zone__price"><span class="zone__cur">$</span>180.000 <span class="zone__unit">COP</span></span>
+                <span class="zone__go">Reservar <svg aria-hidden="true"><use href="#i-flecha"/></svg></span>
+              </a>
+            </li>
+            <li class="rv" style="--d:3">
+              <a class="zone" data-book="remate" data-zone="soleadoras" target="_blank" rel="noopener"
+                 href="https://wa.me/573104001919?text=Hola%2C%20quiero%20reservar%20para%20el%20Remate%20Ultra%20Privado%20del%20domingo%2015%20de%20noviembre%20de%202026%20en%20Isla%20Santa%20Cruz%2C%20playas%20de%20Bar%C3%BA.%20Me%20interesa%20la%20zona%20soleadoras%20(valor%20publicado%3A%20%24150.000%20COP).%20%C2%BFMe%20confirman%20disponibilidad%20y%20el%20proceso%20de%20reserva%3F">
+                <span class="zone__n" aria-hidden="true">04</span>
+                <span class="zone__name">Zona soleadoras</span>
+                <span class="zone__price"><span class="zone__cur">$</span>150.000 <span class="zone__unit">COP</span></span>
+                <span class="zone__go">Reservar <svg aria-hidden="true"><use href="#i-flecha"/></svg></span>
+              </a>
+            </li>
+            <li class="rv" style="--d:4">
+              <a class="zone" data-book="remate" data-zone="lounge" target="_blank" rel="noopener"
+                 href="https://wa.me/573104001919?text=Hola%2C%20quiero%20reservar%20para%20el%20Remate%20Ultra%20Privado%20del%20domingo%2015%20de%20noviembre%20de%202026%20en%20Isla%20Santa%20Cruz%2C%20playas%20de%20Bar%C3%BA.%20Me%20interesa%20la%20zona%20lounge%20(valor%20publicado%3A%20%24180.000%20COP).%20%C2%BFMe%20confirman%20disponibilidad%20y%20el%20proceso%20de%20reserva%3F">
+                <span class="zone__n" aria-hidden="true">05</span>
+                <span class="zone__name">Zona lounge</span>
+                <span class="zone__price"><span class="zone__cur">$</span>180.000 <span class="zone__unit">COP</span></span>
+                <span class="zone__go">Reservar <svg aria-hidden="true"><use href="#i-flecha"/></svg></span>
+              </a>
+            </li>
+            <li class="rv" style="--d:5">
+              <a class="zone" data-book="remate" data-zone="playa-lounge" target="_blank" rel="noopener"
+                 href="https://wa.me/573104001919?text=Hola%2C%20quiero%20reservar%20para%20el%20Remate%20Ultra%20Privado%20del%20domingo%2015%20de%20noviembre%20de%202026%20en%20Isla%20Santa%20Cruz%2C%20playas%20de%20Bar%C3%BA.%20Me%20interesa%20la%20zona%20playa%20lounge%20(valor%20publicado%3A%20%24250.000%20COP).%20%C2%BFMe%20confirman%20disponibilidad%20y%20el%20proceso%20de%20reserva%3F">
+                <span class="zone__n" aria-hidden="true">06</span>
+                <span class="zone__name">Zona playa lounge</span>
+                <span class="zone__price"><span class="zone__cur">$</span>250.000 <span class="zone__unit">COP</span></span>
+                <span class="zone__go">Reservar <svg aria-hidden="true"><use href="#i-flecha"/></svg></span>
+              </a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- CIERRE · RESERVA -->
+    <section class="close" id="reservar" aria-labelledby="cierre-titulo">
+      <div class="wrap close__grid">
+        <div class="close__head">
+          <h2 class="close__title rv" id="cierre-titulo">
+            <span class="line"><span class="line__in">Tu próxima</span></span>
+            <span class="line"><span class="line__in">experiencia</span></span>
+            <span class="line"><span class="line__in">comienza en</span></span>
+            <span class="line"><span class="line__in">el mar.</span></span>
+          </h2>
+          <p class="close__sub rv" style="--d:2">Cartagena · 13, 14 y 15 de noviembre de 2026.</p>
+        </div>
+
+        <div class="composer rv" style="--d:1">
+          <h3 class="composer__title">Arma tu reserva</h3>
+
+          <fieldset class="seg">
+            <legend class="composer__lbl">Experiencia</legend>
+            <div class="seg__opts">
+              <label class="seg__opt"><input type="radio" name="exp" value="13" checked><span><b>Festival</b> Vie 13</span></label>
+              <label class="seg__opt"><input type="radio" name="exp" value="14"><span><b>Festival</b> Sáb 14</span></label>
+              <label class="seg__opt"><input type="radio" name="exp" value="remate"><span><b>Remate</b> Dom 15</span></label>
+            </div>
+          </fieldset>
+
+          <div class="composer__zone" data-zone-field hidden>
+            <label class="composer__lbl" for="zona">Zona</label>
+            <div class="select">
+              <select id="zona" name="zona">
+                <option value="">Elige una zona</option>
+                <option value="bar-amarillo">Bar Amarillo flotante · $450.000 por persona</option>
+                <option value="playa">Zona playa · $250.000</option>
+                <option value="mesas-cocteleras">Zona mesas cocteleras · $180.000</option>
+                <option value="soleadoras">Zona soleadoras · $150.000</option>
+                <option value="lounge">Zona lounge · $180.000</option>
+                <option value="playa-lounge">Zona playa lounge · $250.000</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="composer__qty">
+            <label class="composer__lbl" for="personas">Personas</label>
+            <div class="stepper">
+              <button type="button" data-step="-1" aria-label="Quitar una persona">−</button>
+              <input id="personas" name="personas" type="number" inputmode="numeric" min="1" max="30" value="2">
+              <button type="button" data-step="1" aria-label="Agregar una persona">+</button>
+            </div>
+          </div>
+
+          <p class="composer__sum" aria-live="polite" data-summary>Festival Náutico · viernes 13 de noviembre · 2 personas · $1.000.000 COP por persona / por día</p>
+
+          <a class="btn btn--xl btn--block" data-composer-go target="_blank" rel="noopener"
+             href="https://wa.me/573104001919?text=Hola%2C%20quiero%20informaci%C3%B3n%20y%20disponibilidad%20para%20reservar%20cupos%20del%20Festival%20N%C3%A1utico%20Cartagena%202026%20para%20el%20viernes%2013%20de%20noviembre.%20Valor%20publicado%3A%20%241.000.000%20COP%20por%20persona%20y%20por%20d%C3%ADa.%20%C2%BFC%C3%B3mo%20puedo%20confirmar%20mi%20reserva%3F">
+            <svg class="btn__wa" aria-hidden="true"><use href="#i-wa"/></svg>
+            <span class="btn__txt">Reservar por WhatsApp</span>
+          </a>
+          <p class="composer__fine">La disponibilidad se confirma al momento de realizar la reserva.</p>
+        </div>
+      </div>
+
+      <footer class="foot wrap">
+        <img class="foot__logo" src="assets/img/logo-rumbas-de-la-ciudad.webp" width="583" height="150" alt="Rumbas de la Ciudad" loading="lazy" decoding="async">
+        <ul class="foot__links">
+          <li><a href="https://www.instagram.com/rumbasdelaciudad/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-ig"/></svg>@rumbasdelaciudad</a></li>
+          <li><a data-book="festival" target="_blank" rel="noopener" href="https://wa.me/573104001919?text=Hola%2C%20quiero%20informaci%C3%B3n%20y%20disponibilidad%20para%20reservar%20cupos%20del%20Festival%20N%C3%A1utico%20Cartagena%202026%20(13%20y%2014%20de%20noviembre).%20Valor%20publicado%3A%20%241.000.000%20COP%20por%20persona%20y%20por%20d%C3%ADa.%20%C2%BFC%C3%B3mo%20puedo%20confirmar%20mi%20reserva%3F"><svg aria-hidden="true"><use href="#i-wa"/></svg>310 400 1919</a></li>
+          <li><span>Medellín · Cartagena</span></li>
+        </ul>
+        <p class="foot__copy">© 2026 Rumbas de la Ciudad</p>
+      </footer>
+    </section>
+  </main>
+
+  <a class="wa-float" data-wa-float target="_blank" rel="noopener" aria-label="Reservar por WhatsApp"
+     href="https://wa.me/573104001919?text=Hola%2C%20quiero%20informaci%C3%B3n%20y%20disponibilidad%20para%20reservar%20cupos%20del%20Festival%20N%C3%A1utico%20Cartagena%202026%20(13%20y%2014%20de%20noviembre).%20Valor%20publicado%3A%20%241.000.000%20COP%20por%20persona%20y%20por%20d%C3%ADa.%20%C2%BFC%C3%B3mo%20puedo%20confirmar%20mi%20reserva%3F">
+    <svg aria-hidden="true"><use href="#i-wa"/></svg>
+  </a>
+
+  <!-- Íconos -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-flecha" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"/></symbol>
+      <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.42.25-.69.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.41"/></symbol>
+      <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="4.8"/><circle cx="12" cy="12" r="4.1"/></g><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"/></symbol>
+      <symbol id="i-timon" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="6.2"/><circle cx="12" cy="12" r="1.9"/><path d="M12 2.3v3.5M12 18.2v3.5M2.3 12h3.5M18.2 12h3.5M5.1 5.1l2.5 2.5M16.4 16.4l2.5 2.5M18.9 5.1l-2.5 2.5M7.6 16.4l-2.5 2.5"/></g></symbol>
+      <symbol id="i-combustible" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 20.5V4.8c0-.7.6-1.3 1.3-1.3h6.4c.7 0 1.3.6 1.3 1.3v15.7M3 20.5h12"/><path d="M7 7h4v3.6H7z"/><path d="M13.5 9.5h1.8c.8 0 1.4.6 1.4 1.4v5.3a1.3 1.3 0 0 0 2.6 0V8.4l-2.6-2.9"/></g></symbol>
+      <symbol id="i-bano" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3.5h5.5v7H5z"/><path d="M4.2 10.5h15.3c0 3.3-2.7 6-6 6H10c-3.2 0-5.8-2.7-5.8-6z"/><path d="M9.2 16.5l-.6 4h6.2l-.6-4"/></g></symbol>
+      <symbol id="i-sonido" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2.5h12v19H6z"/><circle cx="12" cy="7.2" r="1.8"/><circle cx="12" cy="15" r="3.8"/><circle cx="12" cy="15" r=".9"/></g></symbol>
+      <symbol id="i-hielo" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8l8 4.6v9.2L12 21.2 4 16.6V7.4z"/><path d="M4 7.4l8 4.6 8-4.6M12 12v9.2"/><path d="M7 11.4l2.2 1.3"/></g></symbol>
+      <symbol id="i-regalo" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.8 11h14.4v9.5H4.8zM3.5 7.5h17V11h-17zM12 7.5v13"/><path d="M12 7.5C10.6 4.2 7.4 3.8 7.4 5.7c0 1.5 2.7 1.8 4.6 1.8zM12 7.5c1.4-3.3 4.6-3.7 4.6-1.8 0 1.5-2.7 1.8-4.6 1.8z"/><path d="M2.6 3.6l1 1.4M21.4 3.2l-1.2 1.2M20.6 14.5h1.6"/></g></symbol>
+      <symbol id="i-agua" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2.5h4v2.3l1.6 2c.4.5.6 1.1.6 1.8V20c0 .8-.7 1.5-1.5 1.5H9.3c-.8 0-1.5-.7-1.5-1.5V8.6c0-.7.2-1.3.6-1.8l1.6-2z"/><path d="M12 11.3c1.2 1.5 1.8 2.6 1.8 3.5a1.8 1.8 0 0 1-3.6 0c0-.9.6-2 1.8-3.5z"/></g></symbol>
+      <symbol id="i-aguardiente" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 5.5h11l-1.7 14.6c-.1.8-.7 1.4-1.5 1.4H9.7c-.8 0-1.4-.6-1.5-1.4z"/><path d="M7.3 11.5h9.4"/><path d="M10 2.5l.5 1.3M14 2.5l-.5 1.3"/></g></symbol>
+      <symbol id="i-cerveza" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.4 2.5h3.2v4.6l1.8 2.7c.3.5.5 1 .5 1.6V20c0 .8-.7 1.5-1.5 1.5H9.6c-.8 0-1.5-.7-1.5-1.5v-8.6c0-.6.2-1.1.5-1.6l1.8-2.7z"/><path d="M8.1 13h7.8v4.6H8.1z"/></g></symbol>
+      <symbol id="i-empanada" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2.8 16.5a9.2 9.2 0 0 1 18.4 0z"/><path d="M5.6 16.5a6.4 6.4 0 0 1 12.8 0" stroke-dasharray="1.3 1.7"/></g></symbol>
+    </defs>
+  </svg>
+</body>
+</html>
